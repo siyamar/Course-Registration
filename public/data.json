@@ -1,0 +1,74 @@
+[
+    {
+        "id" : 1,
+        "name": "Computer Science",
+        "image": "./Asset/Rectangle 2-1.png",
+        "details": "Computer Science is a four-year program that covers a wide range of topics in computer science, including programming, algorithms, and software development.",
+        "price": 10000.00,
+        "credit": 3
+    },
+    {
+        "id" : 2,
+        "name": "Business Administration",
+        "image": "./Asset/Rectangle 2-2.png",
+        "details": "The Business Administration program offers a comprehensive curriculum in business management, economics, and entrepreneurship.",
+        "price": 8000.00,
+        "credit": 2
+    },
+    {
+        "id" : 3,
+        "name": "Engineering",
+        "image": "./Asset/Rectangle 2-3.png",
+        "details": "Engineering is a rigorous program where students can specialize in electrical, mechanical, civil, or other engineering disciplines.",
+        "price": 11000.00,
+        "credit": 3
+    },
+    {
+        "id" : 4,
+        "name": "Psychology",
+        "image": "./Asset/Rectangle 2-4.png",
+        "details": "Psychology explores the human mind and behavior. The program includes courses in clinical psychology, counseling, and research methods.",
+        "price": 8500.00,
+        "credit": 5
+    },
+    {
+        "id" : 5,
+        "name": "Biology",
+        "image": "./Asset/Rectangle 2-5.png",
+        "details": "Biology students study the natural world and can participate in research projects and labs to gain hands-on experience.",
+        "price": 9500.00,
+        "credit": 2
+    },
+    {
+        "id" : 6,
+        "name": "Economics",
+        "image": "./Asset/Rectangle 2-6.png",
+        "details": "Economics focuses on the study of markets, finance, and economic policy. Students can participate in study abroad programs.",
+        "price": 8200.00,
+        "credit": 5
+    },
+    {
+        "id" : 7,
+        "name": "Environmental Science",
+        "image": "./Asset/Rectangle 2.png",
+        "details": "Environmental Science involves fieldwork and research on environmental issues, including collaboration with local organizations.",
+        "price": 9800.00,
+        "credit": 10
+    },
+    {
+        "id" : 8,
+        "name": "Art History",
+        "image": "./Asset/Rectangle 3-1.png",
+        "details": "Art History explores the history and cultural significance of art and visual culture. Graduates can work in museums and galleries.",
+        "price": 7500.00,
+        "credit": 10
+    },
+    {
+        "id" : 9,
+        "name": "Political Science",
+        "image": "./Asset/Rectangle 3.png",
+        "details": "Political Science research areas include international relations, comparative politics, and political theory.",
+        "price": 9000.00,
+        "credit": 5
+    }
+]
