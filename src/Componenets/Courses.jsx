@@ -25,16 +25,24 @@ const Courses= ()=> {
         }
         else{
 
-            // setSelectedCourse.forEach(item=> {  
-            //     count=count+item.credit
-            // });
-            const totalRremaining = 20-count
-            setSelectedCourse([...selectedCourse, course])
+            selectedCourse.forEach(item=> {  
+                count=count+item.credit
+            });
+            const totalRremaining = 20-count;
+
+            if(count>20){
+                alert('Credit Already Fillup !!!')
+            }
+            else{
+                setUsesCredit(count)
+                setRemainingCredit(totalRremaining)
+                setSelectedCourse([...selectedCourse, course])
+            }
         }
     };
   
     return (
-      <div>
+      <div className='main-container'>
         <h2>Course Registration</h2>
         <div className="container">
             <div className="home-container">
@@ -57,9 +65,12 @@ const Courses= ()=> {
                 }
             </div>
             <div className='cart'>
-               <Cart selectedCourse={selectedCourse}></Cart>
-               <hr />
-               <h4>Total Credit Hour :</h4>
+               <Cart key={selectedCourse.id}
+               selectedCourse={selectedCourse}
+               remainingCredit={remainingCredit}
+               usesCredit={usesCredit}
+               ></Cart>
+               
             </div>
             </div>
         </div>
