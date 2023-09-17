@@ -4,7 +4,7 @@
         "name": "Computer Science",
         "image": "./Asset/Rectangle 2-1.png",
         "details": "Computer Science is a four-year program that covers a wide range of topics in computer science, including programming, algorithms, and software development.",
-        "price": 10000.00,
+        "price": 100,
         "credit": 3
     },
     {
@@ -12,7 +12,7 @@
         "name": "Business Administration",
         "image": "./Asset/Rectangle 2-2.png",
         "details": "The Business Administration program offers a comprehensive curriculum in business management, economics, and entrepreneurship.",
-        "price": 8000.00,
+        "price": 80,
         "credit": 2
     },
     {
@@ -20,7 +20,7 @@
         "name": "Engineering",
         "image": "./Asset/Rectangle 2-3.png",
         "details": "Engineering is a rigorous program where students can specialize in electrical, mechanical, civil, or other engineering disciplines.",
-        "price": 11000.00,
+        "price": 110,
         "credit": 3
     },
     {
@@ -28,7 +28,7 @@
         "name": "Psychology",
         "image": "./Asset/Rectangle 2-4.png",
         "details": "Psychology explores the human mind and behavior. The program includes courses in clinical psychology, counseling, and research methods.",
-        "price": 8500.00,
+        "price": 850,
         "credit": 5
     },
     {
@@ -36,7 +36,7 @@
         "name": "Biology",
         "image": "./Asset/Rectangle 2-5.png",
         "details": "Biology students study the natural world and can participate in research projects and labs to gain hands-on experience.",
-        "price": 9500.00,
+        "price": 95,
         "credit": 2
     },
     {

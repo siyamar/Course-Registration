@@ -1,12 +1,18 @@
 .main-container{
-    
+    background-color: #F3F3F3;
+    padding: 20px;
+    width: auto;
 }
 .card{
     width: 300px;
-    
-    border: 1px solid gray;
-}
+    background-color: #fff;
+    padding-top: 10px;
 
+    border-radius: 10px;
+}
+.card p{
+    margin: 0 15px 10px;
+}
 .card h2{
     font-size: 18px;
 }

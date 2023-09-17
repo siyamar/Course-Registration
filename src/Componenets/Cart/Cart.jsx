@@ -3,9 +3,9 @@ import './Cart.css'
 export default function Cart ({selectedCourse, usesCredit, remainingCredit}){
     
     return(
-        <div>
+        <div className='cart-container'>
             
-            <h5>Credit Hour Remaining {remainingCredit} hr</h5>
+            <h4>Credit Hour Remaining {remainingCredit} hr</h4>
             <hr />
             <h2>Course Name</h2>
             {
@@ -14,7 +14,7 @@ export default function Cart ({selectedCourse, usesCredit, remainingCredit}){
                 ))
             }
             <hr />
-            <h5>Total Credit Hour : {usesCredit}</h5>
+            <p>Total Credit Hour : {usesCredit}</p>
         </div>
     )
 }
