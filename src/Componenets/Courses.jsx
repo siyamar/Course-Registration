@@ -2,9 +2,13 @@
 import { useState } from 'react';
 import './Courses.css'
 import { useEffect } from 'react';
+import Cart from './Cart/Cart';
 const Courses= ()=> {
 
     const[courses, setCourses] = useState([]);
+    const[selectedCourse, setSelectedCourse] = useState([])
+    const [remainingCredit, setRemainingCredit] = useState(20)
+    const[usesCredit, setUsesCredit] = useState(0)
 
     useEffect(()=>{
         fetch('./data.json')
@@ -12,7 +16,22 @@ const Courses= ()=> {
         .then(data=> setCourses(data))
     }, [])
 
-    
+    const handleSelectedCourse = (course) => {
+        const isExist = selectedCourse.find((item) =>
+            item.id ==course.id);
+            let count =course.credit;
+        if(isExist){
+            return alert('This Course Already Selected !!!');
+        }
+        else{
+
+            // setSelectedCourse.forEach(item=> {  
+            //     count=count+item.credit
+            // });
+            const totalRremaining = 20-count
+            setSelectedCourse([...selectedCourse, course])
+        }
+    };
   
     return (
       <div>
@@ -24,7 +43,7 @@ const Courses= ()=> {
                     courses.map(course=>(
                         <div key={course.id} className="card">
                     <img className='photo' src={course.image} alt="" />
-                    <h2>Introduction to C Programming</h2>
+                    <h2>{course.name}</h2>
                     <p><small>{course.details}</small></p>
                     <div className='info'>
                         <p>$</p>
@@ -32,13 +51,15 @@ const Courses= ()=> {
                         <img src="./Asset/Frame.png" alt="" />
                         <p>Credit: {course.credit} hr</p>
                     </div>
-                    <button className='card-btn'>Select</button>
+                    <button onClick={()=>handleSelectedCourse(course)} className='card-btn'>Select</button>
                 </div>
                     ))
                 }
             </div>
             <div className='cart'>
-                <h1>This is cart</h1>
+               <Cart selectedCourse={selectedCourse}></Cart>
+               <hr />
+               <h4>Total Credit Hour :</h4>
             </div>
             </div>
         </div>
